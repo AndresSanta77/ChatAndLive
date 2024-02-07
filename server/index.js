@@ -20,7 +20,7 @@ const db = createClient({
     url : "libsql://oriented-terror-andressanta77.turso.io",
     authToken: process.env.DB_TOKEN
 })
-
+ 
 await db.execute (`
     CREATE TABLE IF NOT EXISTS messages (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
